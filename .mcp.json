@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"],
+      "env": {}
+    },
+    "firefox-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mozilla/firefox-devtools-mcp@latest",
+        "--firefoxPath",
+        "/Applications/Firefox Nightly.app/Contents/MacOS/firefox",
+        "--autoProfile"
+      ],
+      "env": {}
+    }
+  }
+}
